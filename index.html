@@ -13,6 +13,11 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
+    <script
+      src="https://kit.fontawesome.com/6bde658781.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -33,27 +38,32 @@
           <div class="logo">
             <img src="./images/logo.svg" alt="Base Apparel Logo" />
           </div>
-          <h1 class="content__header">
-            <span class="header__highlight">We're</span> coming soon
-          </h1>
-          <p class="content__text">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <form action="" id="form" class="form">
-            <div class="input__group">
-              <input
-                type="email"
-                id="email"
-                class="email"
-                placeholder="Email Address"
-              />
-              <button type="submit" class="submit__button">
-                <img src="./images/icon-arrow.svg" alt="" />
-              </button>
-            </div>
-          </form>
+          <div class="content__description">
+            <h1 class="content__header">
+              <span class="header__highlight">We're</span> coming soon
+            </h1>
+            <p class="content__text">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form action="" id="form" class="form">
+              <div class="input__group">
+                <i class="fa-solid fa-circle-exclamation error__icon"></i>
+                <input
+                  type="email"
+                  id="email"
+                  class="email"
+                  placeholder="Email Address"
+                />
+                <button type="submit" class="submit__button">
+                  <div class="btn"></div>
+                  <img src="./images/icon-arrow.svg" alt="" />
+                </button>
+                <p class="error__message">Test email</p>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="hero__img">
           <img src="./images/hero-desktop.jpg" alt="" />
@@ -66,7 +76,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://https://github.com/DonUggioni">Renan Tiscoski</a>.
       </p>
     </footer>
   </body>
