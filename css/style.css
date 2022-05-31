@@ -73,6 +73,10 @@ body {
   justify-self: end;
 }
 
+.hero__img--hidden {
+  display: none;
+}
+
 /* Input field */
 
 .input__group {
@@ -94,6 +98,7 @@ body {
   outline: none;
   box-shadow: inset 0 0 0 1px rgb(206, 151, 151);
   border: rgb(206, 151, 151) 1px solid;
+  transition: all 0.3s;
 }
 
 .input__group input::placeholder {
@@ -101,12 +106,17 @@ body {
 }
 
 /* Button */
-.submit__button {
+.btn__container {
   position: absolute;
+  left: 77%;
+  top: 0;
+}
+
+.submit__button {
+  position: relative;
   padding: 1.75rem 4.6rem;
   border: none;
   border-radius: 2.8rem;
-  left: 77%;
   background: linear-gradient(
     135deg,
     hsl(0, 80%, 86%) 0%,
@@ -114,16 +124,33 @@ body {
   );
   box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
   cursor: pointer;
-  transition: all 0.3s;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.submit__button::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    135deg,
+    hsl(0, 86%, 94%) 0%,
+    hsl(0, 100%, 87%) 100%
+  );
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.submit__button:hover::before {
+  opacity: 1;
 }
 
 .submit__button:hover {
-  background: linear-gradient(
-    135deg,
-    hsl(0, 89%, 90%) 0%,
-    hsl(0, 66%, 86%) 100%
-  );
-  box-shadow: 0px 15px 20px rgba(168, 93, 93, 0.363);
+  box-shadow: 0px 15px 20px rgba(168, 93, 93, 0.301);
 }
 
 /* Error */
@@ -145,7 +172,7 @@ body {
   font-size: 1.3rem;
   color: var(--soft-red);
   font-weight: 400;
-  padding: 0.5rem 3.2rem;
+  padding: 1rem 3.2rem;
   visibility: hidden;
 }
 
@@ -156,4 +183,19 @@ body {
 .error input {
   box-shadow: inset 0 0 0 1px hsl(0, 93%, 68%);
   border: hsl(0, 93%, 68%) 1px solid;
+}
+
+.error input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px hsl(0, 93%, 68%);
+  border: hsl(0, 93%, 68%) 1px solid;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

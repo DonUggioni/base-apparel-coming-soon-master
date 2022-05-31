@@ -19,17 +19,6 @@
     ></script>
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -56,17 +45,23 @@
                   class="email"
                   placeholder="Email Address"
                 />
-                <button type="submit" class="submit__button">
-                  <div class="btn"></div>
-                  <img src="./images/icon-arrow.svg" alt="" />
-                </button>
-                <p class="error__message">Test email</p>
+                <div class="btn__container">
+                  <button type="submit" class="submit__button">
+                    <img src="./images/icon-arrow.svg" alt="" />
+                  </button>
+                </div>
+                <p class="error__message">Please provide a valid email</p>
               </div>
             </form>
           </div>
+          <img
+            src="./images/hero-mobile.jpg"
+            alt=""
+            class="hero__img hero__img--hidden"
+          />
         </div>
         <div class="hero__img">
-          <img src="./images/hero-desktop.jpg" alt="" />
+          <img src="./images/hero-desktop.jpg" class="hero__img" alt="" />
         </div>
       </div>
     </main>
