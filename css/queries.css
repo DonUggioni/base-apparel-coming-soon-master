@@ -1,0 +1,21 @@
+@media (max-width: 78em) {
+  .content {
+    margin: 7.5rem 0 0 12.5rem;
+  }
+}
+
+@media (max-width: 71.875em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .content {
+    margin: 7.5rem 0 0 8.5rem;
+  }
+}
+
+@media (max-width: 62.8em) {
+  html {
+    font-size: 50%;
+  }
+}

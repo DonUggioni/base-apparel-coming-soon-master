@@ -23,26 +23,30 @@ html {
 }
 
 body {
+  height: 100vh;
+  margin: 0 auto;
   font-family: 'Josefin Sans', sans-serif;
   background: url('../images/bg-pattern-desktop.svg');
 
   /* background-position: -10rem; */
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
 /* Main content */
 .content__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.5fr 1fr;
+  gap: 5rem;
   max-width: 144rem;
+  margin: 0 auto;
 }
 
 .content {
   margin: 7.5rem 0 0 16.5rem;
   max-width: 44.5rem;
   display: grid;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: repeat(2, max-content);
 }
 
 .logo {
@@ -71,6 +75,7 @@ body {
 
 .hero__img {
   justify-self: end;
+  width: 61rem;
 }
 
 .hero__img--hidden {
