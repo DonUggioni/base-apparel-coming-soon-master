@@ -12,10 +12,102 @@
   .content {
     margin: 7.5rem 0 0 8.5rem;
   }
+
+  .submit__button {
+    padding: 1.65rem 4.6rem;
+  }
 }
 
 @media (max-width: 62.8em) {
   html {
     font-size: 50%;
+  }
+
+  .content__container {
+    gap: 8rem;
+  }
+
+  .content {
+    margin: 7.5rem 0 0 6.5rem;
+  }
+
+  .content__text {
+    font-size: 1.8rem;
+  }
+
+  .submit__button {
+    padding: 1.5rem 4rem;
+  }
+}
+
+@media (max-width: 56.4em) {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+    background-size: 100%;
+  }
+
+  .logo {
+    margin: 3.2rem;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  .hero__img--mobile {
+    margin-bottom: 6.4rem;
+  }
+
+  .content__container {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-rows: repeat(3, max-content);
+    margin: 0 auto;
+    min-width: 35.5rem;
+    max-width: 50rem;
+  }
+
+  .content__description {
+    margin: 0 3.2rem;
+  }
+
+  .content__header {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .content__text {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .hero__img--mobile {
+    grid-row: 2;
+    width: 100%;
+  }
+
+  .input__group input {
+    padding: 1.6rem 0;
+    padding-left: 3.2rem;
+    font-size: 1.4rem;
+  }
+
+  .submit__button {
+    padding: 1.3rem 2.8rem;
+  }
+
+  .error__message {
+    margin-bottom: 7rem;
+  }
+
+  .error__icon {
+    top: 15%;
   }
 }
