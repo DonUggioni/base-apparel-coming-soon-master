@@ -45,11 +45,6 @@
     font-size: 62.5%;
   }
 
-  body {
-    background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
-    background-size: 100%;
-  }
-
   .logo {
     margin: 3.2rem;
   }
@@ -64,6 +59,8 @@
 
   .content__container {
     grid-template-columns: 1fr;
+    background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+    background-size: 100%;
   }
 
   .content {

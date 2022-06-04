@@ -26,11 +26,6 @@ body {
   height: 100vh;
   margin: 0 auto;
   font-family: 'Josefin Sans', sans-serif;
-  background: url('../images/bg-pattern-desktop.svg');
-
-  /* background-position: -10rem; */
-  background-size: 60%;
-  background-repeat: no-repeat;
 }
 
 /* Main content */
@@ -46,8 +41,13 @@ body {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 5rem;
-  max-width: 144rem;
+  /* max-width: 144rem; */
   margin: 0 auto;
+  background: url('../images/bg-pattern-desktop.svg');
+
+  /* background-position: -10rem; */
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
 
 .content {
